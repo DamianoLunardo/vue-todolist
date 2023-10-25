@@ -19,8 +19,8 @@
         <div>
             <ul>
               <li v-for="(todo, index) in todos" :key="todo.text" class="todo-item">
-                <span v-if="todo.done" class="line-through">{{ todo.text }}</span>
-                <span v-else class="todo-text">{{ todo.text }}</span>
+                <span v-if="todo.done" class="line-through" @click="toggleDone(index)">{{ todo.text }}</span>
+                <span v-else class="todo-text" @click="toggleDone(index)">{{ todo.text }}</span>
                 <span @click="removeTodo(index)"><i class="fa-solid fa-xmark"></i></span>
               </li>
             </ul>
