@@ -84,13 +84,10 @@ img {
 }
 
 .todo-item {
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     margin: 10px;
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
-  .todo-text {
-    flex: 1;
-  }
+}
+ 
