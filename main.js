@@ -44,7 +44,6 @@ createApp({
                 text: this.addTodoText,
                 done: false
             })
-            this.addTodoText = ''
         },
         toggleDone(index) {
             var todo = this.todos[index];
