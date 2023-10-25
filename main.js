@@ -30,13 +30,21 @@ createApp({
                 text: 'Bere il caffè',
                 done: true
             }
-        ]
+        ],
+        addTodoText: ''
     }
 },
 methods: {
     removeTodo(index) {
         this.todos.splice(index, 1)
-        console.log("Ho rimosso l'elemento",index)
+        console.log("Ho rimosso l'elemento", index)
+    },
+    addTodo() {
+        this.todos.push({
+            text: this.addTodoText,
+            done: false
+        })
+        this.addTodoText = ''
     }
 }
 }).mount('#app')

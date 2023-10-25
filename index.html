@@ -11,8 +11,8 @@
 <body>
     <div id="app" class="container  mt-5" >
         <div>
-            <input type="text" placeholder="Add a new task">
-            <button>Add</button>
+            <input type="text" placeholder="Nuova attività" v-model="addTodoText">
+            <button class="btn btn-primary" @click="addTodo()">Add</button>
         </div>
 
         <div>
