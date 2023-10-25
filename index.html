@@ -20,6 +20,7 @@
               <li v-for="todo in todos" :key="todo.text">
                 <span v-if="todo.done" style="text-decoration: line-through;">{{ todo.text }}</span>
                 <span v-else>{{ todo.text }}</span>
+                <span @click="removeTodo(index)"><i class="fa-solid fa-xmark"></i></span>
               </li>
             </ul>
         </div>

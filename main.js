@@ -32,5 +32,11 @@ createApp({
             }
         ]
     }
-  }
+},
+methods: {
+    removeTodo(index) {
+        this.todos.splice(index, 1)
+        console.log("Ho rimosso l'elemento",index)
+    }
+}
 }).mount('#app')
